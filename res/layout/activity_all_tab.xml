@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">"
+        
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">            
+        </TabWidget>
+        
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">        
+        </FrameLayout>
+        
+        <RadioGroup 
+            android:id="@+id/tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/tab_group_bg"
+            android:checkedButton="@+id/tab1">
+            
+            <RadioButton
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="1dip"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dip"
+                android:button="@null"
+                android:background="@drawable/tab1_bg_selector"
+                android:text="@string/tab1_text">
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="1dip"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dip"
+                android:button="@null"
+                android:background="@drawable/tab1_bg_selector"
+                android:text="@string/tab2_text">
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/tab3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="1dip"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dip"
+                android:button="@null"
+                android:background="@drawable/tab1_bg_selector"
+                android:text="@string/tab3_text">
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/tab4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="1dip"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dip"
+                android:button="@null"
+                android:background="@drawable/tab1_bg_selector"
+                android:text="@string/tab4_text">
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/tab5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:layout_marginTop="1dip"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="4dip"
+                android:button="@null"
+                android:background="@drawable/tab1_bg_selector"
+                android:text="@string/tab5_text">
+            </RadioButton>            
+        </RadioGroup>
+        
+    </LinearLayout>
+
+</TabHost>

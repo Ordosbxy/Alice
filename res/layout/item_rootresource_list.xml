@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="15dip"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal" >
+
+    <llf.cool.view.RemoteImageView android:id="@+id/image_type_icon"
+        android:layout_width="@dimen/cover_size" 
+        android:layout_height="@dimen/cover_size"
+        android:paddingRight="10dip"
+        />
+    
+    <TextView android:id="@+id/text_type_item"
+       	android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="@drawable/list_item_text_color"
+		/>
+    
+    <ImageView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:src="@drawable/arrow"
+		/>
+
+</LinearLayout>

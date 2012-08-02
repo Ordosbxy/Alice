@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="360px"
+    android:layout_height="330px"
+    android:background="@drawable/mange_background"
+    >
+    <TextView
+     	android:id="@+id/new_words_manage"
+     	android:text ="@string/newwords_manage"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:textColor ="#000000"
+		 android:layout_marginLeft="5px"
+		 android:layout_marginTop="5px"
+    />
+    <ListView
+		 android:id="@+id/dialog_list_1"
+		 android:layout_width="238px"
+		 android:layout_height="266px"
+		 android:layout_marginLeft="6px"
+		 android:layout_marginTop="60px"
+		 android:listSelector="@drawable/words_item"
+	/>
+	<ImageButton
+		android:id="@+id/dialog_button_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background= "@drawable/words_open_table"
+		android:layout_marginLeft="260px"
+		 android:layout_marginTop="85px"
+	/>
+	<ImageButton
+		android:id="@+id/dialog_button_2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below ="@id/dialog_button_1"
+		android:background= "@drawable/words_new_table"
+		android:layout_marginLeft="260px"
+		 android:layout_marginTop="10px"
+	/>
+	<ImageButton
+		android:id="@+id/dialog_button_3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below ="@id/dialog_button_2"
+		android:background= "@drawable/words_delete_table"
+		android:layout_marginLeft="260px"
+		 android:layout_marginTop="10px"
+	/>
+	<ImageButton
+		android:id="@+id/dialog_button_4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below ="@id/dialog_button_3"
+		android:background= "@drawable/words_close_table"
+		android:layout_marginLeft="260px"
+		 android:layout_marginTop="10px"
+	 />
+</RelativeLayout>

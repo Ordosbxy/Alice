@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/MainWindow"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/content_bg_black">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		<LinearLayout android:id="@+id/playControlPanel"
+			android:gravity="center" android:background="@drawable/upback"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<RelativeLayout android:id="@+id/layoutPlayMode"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageButton android:id="@+id/btnPlayMode"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playmode_btn_repeat"
+					android:scaleType="fitXY" android:layout_centerInParent="true"/>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/layoutPlayback" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageButton android:id="@+id/btnPlayback"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playback_btn_fast" android:layout_marginLeft="50dip"
+					android:scaleType="fitXY" android:layout_centerInParent="true"/>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/layoutPlayselect"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageButton android:id="@+id/btnPlayselect" android:layout_marginLeft="50dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playselect_btn" 
+					android:scaleType="fitXY" android:layout_centerInParent="true"/>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/layoutPlaynext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageButton android:id="@+id/btnPlayNext" android:layout_marginLeft="50dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playnext_btn_fast"
+					android:scaleType="fitXY" android:layout_centerInParent="true" />
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/layoutMusicList"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<ImageButton android:id="@+id/btnMusicList"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:background="@drawable/xml_playback_btn_musiclist"  android:layout_alignParentRight="true"
+					android:scaleType="fitXY" android:layout_centerInParent="true"/>
+			</RelativeLayout>
+			<llf.cool.view.AutoMarqueTextView
+				android:id="@+id/study_tv_title" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:visibility="gone"
+				android:layout_centerHorizontal="true" android:layout_gravity="center_vertical"
+				android:layout_toLeftOf="@id/layoutMusicList"
+				android:layout_toRightOf="@id/layoutPlayMode"
+				android:layout_centerInParent="true" android:textSize="14.5sp"
+				android:textColor="#EF7CE0" android:singleLine="true"
+				android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever" />
+		</LinearLayout>
+		
+		
+		<RelativeLayout android:id="@+id/layout_02"
+			android:orientation="horizontal" android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true">
+			<TextView android:id="@+id/tv_musicCurrentTime"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:textSize="15sp" android:text="00:00:00" />
+			<TextView android:id="@+id/tv_musicDurationTime" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true" android:textSize="15sp"
+				android:text="00:00:00" />
+				<!-- style="@android:style/Widget.SeekBar" -->
+			<SeekBar android:id="@+id/seekBar_musicProgress" 
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				  style="?android:attr/progressBarStyleHorizontal"  android:layout_toLeftOf="@id/tv_musicDurationTime"
+				android:layout_toRightOf="@id/tv_musicCurrentTime" android:layout_centerVertical="true"
+				 android:thumbOffset="0dip" android:maxHeight="17dip" android:minHeight="17dip"
+				android:progressDrawable="@drawable/img_playback_progress01"
+				android:thumb="@drawable/xml_playback_progress_thumb" 
+				/>
+		</RelativeLayout>
+		<LinearLayout android:id="@+id/layout_03"
+			android:background="@drawable/underfunpro" android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="60dip"
+			android:layout_above="@id/layout_02" android:gravity="center">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<ImageButton android:id="@+id/btnStar"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playback_btn_star_level01"
+					android:scaleType="fitXY" android:layout_centerInParent="true" />
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<ImageButton android:id="@+id/btnPrev"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playback_btn_last"
+					android:scaleType="fitXY" android:layout_centerInParent="true" />
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<ImageButton android:id="@+id/btnPlay"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playback_btn_play"
+					android:scaleType="fitXY" android:layout_centerInParent="true" />
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<ImageButton android:id="@+id/btnNext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_playback_btn_next"
+					android:scaleType="fitXY" android:layout_centerInParent="true" />
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<ImageButton android:id="@+id/btnCheckState"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_btn_star_check_state"
+					android:layout_centerInParent="true" />
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/layout_04"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_above="@id/layout_03"
+			android:background="#384CE1">
+			<RelativeLayout android:id="@+id/img_wordContent"
+				android:layout_width="wrap_content" android:layout_height="50dip"
+				android:layout_weight="1">
+				<ScrollView  android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:id="@+id/tv_searched_word"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textColor="@color/honeydew"
+					android:paddingLeft="2dip" />
+					</ScrollView>
+			</RelativeLayout>
+			<RelativeLayout android:id="@+id/img_addNewWord"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="7" android:layout_gravity="center">
+				<ImageButton android:id="@+id/btn_addNewWord"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:background="@drawable/xml_btn_add_new_word" />
+			</RelativeLayout>
+		</LinearLayout>
+
+		<llf.cool.view.LrcSurfaceView android:id="@+id/LyricShow"
+			android:layout_gravity="center" android:fadingEdge="horizontal|vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_below="@id/playControlPanel" android:layout_above="@id/layout_04" />
+		
+	</RelativeLayout>
+	
+	<RelativeLayout android:layout_width="fill_parent"
+		android:background="#00000000" android:layout_height="fill_parent"
+		android:id="@+id/playmodemenu">
+		<LinearLayout android:id="@+id/playmodetable" android:background="@color/white"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="50dip"
+			android:visibility="gone">
+			<TextView android:textSize="16sp" android:id="@+id/playorder" 
+				android:layout_width="fill_parent" android:layout_height="36dip"
+				android:text="@string/playorder" android:textColor="@drawable/xml_word_color_change" />
+			<TextView android:textSize="16sp" android:id="@+id/repeateone"
+				android:layout_width="fill_parent" android:layout_height="36dip"
+				android:text="@string/repeateone" android:textColor="@drawable/xml_word_color_change" />
+			<TextView android:textSize="16sp" android:id="@+id/repeateall"
+				android:layout_width="fill_parent" android:layout_height="36dip"
+				android:text="@string/repeateall" android:textColor="@drawable/xml_word_color_change" />
+			<TextView android:textSize="16sp" android:id="@+id/playone"
+				android:layout_width="fill_parent" android:layout_height="36dip"
+				android:text="@string/playone" android:textColor="@drawable/xml_word_color_change" />
+			<!-- TextView android:textSize="16sp" android:id="@+id/randomplay" android:layout_width="fill_parent" 
+				android:layout_height="36dip" android:text="@string/randomplay" android:textColor="@color/royalblue"/> -->
+
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/displaymenutable" android:gravity="center"
+			android:orientation="vertical" android:layout_width="wrap_content" android:background="@color/white"
+			android:layout_height="wrap_content" android:layout_marginTop="50dip" android:layout_alignParentRight="true"
+		  android:visibility="gone" >
+			<RadioGroup android:layout_width="wrap_content" android:id="@+id/controllfont"
+				android:orientation="horizontal" android:layout_height="wrap_content" 
+				android:tag="@string/fontsize" android:layout_gravity="right">
+				<RadioButton android:id="@+id/big" android:layout_width="wrap_content"
+					android:textSize="16sp" android:layout_height="wrap_content"
+					android:text="@string/fontbig" android:textColor="@color/royalblue"></RadioButton>
+				<RadioButton android:id="@+id/middle" android:textSize="16sp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/fontmid" android:textColor="@color/royalblue"></RadioButton>
+				<RadioButton android:id="@+id/small" android:textSize="16sp"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/fontsml" android:textColor="@color/royalblue"></RadioButton>
+			</RadioGroup>
+
+			<!--  TextView android:id="@+id/moreresource" android:text="@string/moreresource"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" android:textColor="@drawable/xml_word_color_change"></TextView>-->
+			<TextView android:id="@+id/searchword" android:text="@string/word"
+				android:layout_width="wrap_content" android:layout_height="36dip"
+				android:textSize="16sp" android:textColor="@drawable/xml_word_color_change"></TextView>
+			<TextView android:id="@+id/notebook" android:text="@string/notebook"
+				android:layout_width="wrap_content" android:layout_height="36dip"
+				android:textSize="16sp" android:textColor="@drawable/xml_word_color_change"></TextView>
+			<!--  TextView android:id="@+id/countmanager" android:text="@string/countmanager"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" android:textColor="@drawable/xml_word_color_change"></TextView>
+			<TextView android:id="@+id/exit" android:text="@string/exit"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="16sp" android:textColor="@drawable/xml_word_color_change"></TextView>-->
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

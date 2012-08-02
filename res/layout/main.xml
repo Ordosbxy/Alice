@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<RelativeLayout
+		android:id="@+id/relative"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+	    <!-- all tabs -->
+	    <TabWidget
+		    android:id="@android:id/tabs"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"/>
+	    
+	    <!-- all tab contents -->
+	    <FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_above="@android:id/tabs">
+			
+	        <!-- tab1 content -->
+			<LinearLayout
+				android:id="@+id/tab1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/content_bg_black">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="5dip"
+					android:gravity="center_horizontal">
+					<EditText
+						android:id="@+id/edit"
+						android:layout_width="250dip"
+						android:layout_height="50dip"
+						android:singleLine="true"
+						android:paddingLeft="10dip"
+						android:background="@drawable/edit_bg"/>
+			        <ImageButton
+				        android:id="@+id/search"
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dip"
+				        android:background="@drawable/search_button_img"/> 
+		       </LinearLayout> 
+		       
+		       <LinearLayout
+			       android:id="@+id/search_linearLayout"
+			       android:layout_width="fill_parent"
+			       android:layout_height="fill_parent"
+			       android:background="@drawable/content_bg_black"
+			       android:visibility="gone">			        
+			       <llf.cool.view.RollBackListView
+				       android:id="@+id/math_result_list"        
+				       android:layout_width="fill_parent"
+				       android:layout_height="fill_parent"
+					   android:cacheColorHint="#00000000"/>
+		       </LinearLayout> 
+		       
+		       <LinearLayout 
+			       android:id="@+id/show_explain_linearLayout"
+			       android:layout_width="fill_parent"
+			       android:layout_height="fill_parent"
+			       android:orientation="horizontal"
+			       android:background="@drawable/content_bg_black"
+			       android:visibility="gone">
+			       <TextView
+				       android:id="@+id/show_explain"
+				       android:layout_width="fill_parent"
+				       android:layout_height="fill_parent"
+				       android:textSize="22sp"
+				       android:textColor="@color/white"/>
+		        </LinearLayout> 
+	        </LinearLayout> 
+	        <!-- tab1 content end-->
+     
+			<!-- tab2 content -->
+			<LinearLayout
+				android:id="@+id/tab2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/content_bg_black">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/search_history"
+					android:textSize="22sp"
+					android:textColor="@color/white"
+					android:background="@color/sandybrown"/>
+		        <llf.cool.view.RollBackListView
+			        android:id="@+id/history_list"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+					android:cacheColorHint="#00000000"/>
+			</LinearLayout>
+			<!-- tab2 content end -->
+			
+			<!-- tab3 content -->
+		    <LinearLayout
+				android:id="@+id/tab3"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:background="@drawable/content_bg_black">
+				<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/setting"
+					android:textColor="@color/white"
+					android:background="@drawable/statusbar"/>
+				<LinearLayout
+					android:id="@+id/setting_options_linearLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+					<llf.cool.view.RollBackListView
+						android:id="@+id/setting_list"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:cacheColorHint="#00000000"
+						/>
+			    </LinearLayout>
+			     
+				<LinearLayout
+					android:id="@+id/intro_linearLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:background="@color/white"
+					android:visibility="gone"> 
+					<TextView     
+						android:id="@+id/intro"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:textColor="@color/black"/>
+			    </LinearLayout>
+            </LinearLayout>
+            <!-- tab3 content end -->
+            
+		</FrameLayout> 
+	</RelativeLayout>
+</TabHost> 
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:background="@drawable/background"
+    >
+     	 <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="33px"
+	        >
+			   	<ImageButton
+	        		android:id ="@+id/result_menu"
+	        		android:layout_width ="wrap_content"
+				   	android:layout_height ="wrap_content"
+				   	android:background="@drawable/words_menu"
+				   	android:layout_marginLeft="752px"
+				   		android:layout_marginTop ="4px"
+			   	/>
+			   	<ImageButton
+	        		android:id ="@+id/result_close"
+	        		android:layout_width ="wrap_content"
+				   	android:layout_height ="wrap_content"
+				   	android:background="@drawable/words_close"
+				   	android:layout_marginRight="2px"
+				   	android:layout_marginTop ="4px"
+			   	/>
+     </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/result"
+		    android:layout_marginLeft="5px"
+		    >
+	 </LinearLayout>
+    <llf.cool.view.RollBackListView
+    	android:id ="@+id/list_result"
+    	android:layout_width="fill_parent"
+    	android:layout_height="380px"
+    	android:layout_marginLeft="5px"
+    	android:cacheColorHint="#00000000"
+    	/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+		    <ImageButton
+		    	android:id ="@+id/b1"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity ="center"
+		    	android:background="@drawable/words_confirm"
+		    	android:layout_marginLeft="320px"
+		    	/>
+		    <ImageButton
+		    	android:id ="@+id/b2"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity ="center"
+		    	android:background="@drawable/words_redo"
+		    	android:layout_marginLeft="50px"
+		    	/>
+	</LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="tab_group_bg_start">#6f2573</color>
+    <color name="tab_group_bg_end">#9d359e</color>
+    <color name="alert_dialog_bg">#20000000</color>
+    
+	<color name="lightgray">#d3d3d3</color>
+	<color name="light_white">#ff394462</color>
+	<color name="wheat">#f5deb3</color>
+	<color name="sandybrown">#f4a460</color>
+	<color name="azure">#f0ffff</color>
+	<color name="honeydew">#f0fff0</color>
+	<color name="aliceblue">#f0f8ff</color>
+	<color name="khaki">#f0e68c</color>
+	<color name="lightcoral">#f08080</color>
+	<color name="palegoldenrod">#eee8aa</color>
+	<color name="violet">#ee82ee</color>
+	<color name="darksalmon">#e9967a</color>
+	<color name="lavender">#e6e6fa</color>
+	<color name="lightcyan">#e0ffff</color>
+	<color name="burlywood">#deb887</color>
+	<color name="plum">#dda0dd</color>
+	<color name="gainsboro">#dcdcdc</color>
+	<color name="crimson">#dc143c</color>
+	<color name="palevioletred">#db7093</color>
+	<color name="goldenrod">#daa520</color>
+	<color name="orchid">#da70d6</color>
+	<color name="thistle">#d8bfd8</color>
+	<color name="lightgrey">#d3d3d3</color>
+	<color name="tan">#d2b48c</color>
+	<color name="chocolate">#d2691e</color>
+	<color name="peru">#cd853f</color>
+	<color name="royalblue">#800080</color>
+	<color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/open_dialog"
+    >
+    <TextView
+    	android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text ="@string/input"
+   		android:layout_marginLeft="5px"
+     	android:layout_marginTop="5px"
+   		android:textSize ="20px"
+   		android:textColor ="#000000"
+    />	
+    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background ="@drawable/edit_dialog"
+	        android:layout_marginTop="50px"
+	        android:layout_marginLeft="65px"
+	        >
+	 <EditText
+	 	android:id ="@+id/edittext"
+    	android:layout_width="240px"
+   		android:layout_height="wrap_content"
+   		android:singleLine="true"
+   		android:maxLength = "12"
+   		android:cursorVisible="true"
+   		android:focusable="true"
+   		android:background="@null"
+   		android:layout_marginTop="3px"
+   		android:layout_marginLeft="3px"
+   		android:inputType="textVisiblePassword"
+   	/>
+	 </LinearLayout>
+   
+   	<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20px"
+	        >
+	        <ImageButton
+	        	android:id="@+id/okay"
+		         android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background ="@drawable/words_confirm"
+		        android:layout_marginLeft="80px"
+	        />
+	         <ImageButton
+	         	android:id="@+id/cancel"
+		         android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		          android:background ="@drawable/words_cancel"
+		            android:layout_marginLeft="10px"
+	        />
+	 </LinearLayout>
+</LinearLayout>

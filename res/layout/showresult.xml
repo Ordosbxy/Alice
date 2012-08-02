@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/open_dialog"
+    >
+    <TextView
+    	android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text ="@string/lookresult"
+   		android:textSize ="20px"
+   		android:textColor ="#000000"
+    />	
+	 <TextView
+	 	android:id="@+id/showresutl_text"
+    	android:layout_marginLeft="35px"
+     	android:layout_marginTop="20px"
+    	android:layout_width="220px"
+   		android:layout_height="wrap_content"
+   		android:textSize ="20px"
+   		android:textColor ="#000000"
+   	/>
+   	<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20px"
+	        >
+	        <ImageButton
+	        	android:id = "@+id/look"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/words_show_result"
+		        android:layout_marginLeft="136px"
+	        />
+	 </LinearLayout>
+</LinearLayout>

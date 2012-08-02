@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- word查询结果界面, 单词listView的Item -->
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" >
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_alignParentLeft="true"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/ItemText" android:textColor="@color/white"
+			android:textSize="20sp"/>
+	</LinearLayout>
+</RelativeLayout>  

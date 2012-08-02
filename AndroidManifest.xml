@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="llf.cool" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+	<application 
+	    android:name="CoolApplication"
+	    android:icon="@drawable/icon" 
+	    android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar">
+		
+		<service android:name=".service.AudioService" />
+		<service android:name=".service.DownloadService" />
+		
+		<activity android:name=".activity.AnIntroductionActivity"
+	        android:theme="@android:style/Theme.NoTitleBar"
+	        android:configChanges="orientation|keyboardHidden">
+	    	<intent-filter>
+		        <action android:name="android.intent.action.MAIN"/>
+		        <category android:name="android.intent.category.LAUNCHER"/>
+		    </intent-filter>
+		</activity>  
+	      
+	    
+		<activity android:name=".activity.AllTabActivity"
+		    android:theme="@android:style/Theme.NoTitleBar">		    
+		</activity>
+		
+		<activity android:name=".activity.HomeActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"
+		    android:exported="false">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.home"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter> 
+		</activity>
+		
+		<activity android:name=".activity.SubResourceActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"/>
+				
+		<activity android:name=".activity.MainActivity" 
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:exported="false">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.main"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter> 
+		</activity>		
+		
+		<activity android:name=".activity.DownloadActivity"
+		    android:theme="@android:style/Theme.NoTitleBar"/>
+		
+		
+		<activity android:name=".activity.FileListActivity"
+		    android:exported="false"
+			android:launchMode="singleTask" 
+			android:clearTaskOnLaunch="true"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.file"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter> 
+		</activity>
+		
+		<activity android:name=".activity.AudioActivity" 
+		    android:label="@string/app_name" 
+		    android:theme="@android:style/Theme.NoTitleBar"
+		    android:screenOrientation="portrait"
+			android:launchMode="singleTop"      
+			android:clearTaskOnLaunch="true"    
+			android:excludeFromRecents="true"/> 
+			<!-- singleTop 不会new instance，而是调用onNewIntent,即如果已经有AudioActivity的实例， 则发给它， 不new instance -->
+			<!-- clearTaskOnLaunch 只要你按了桌面的图标，这个活动就是第一个发起的, "=true"是一个主入口 -->
+			<!-- excludeFromRecents 是否可被显示在最近打开的activity列表里，默认是false -->
+
+		<activity android:name=".activity.AddSongActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		
+		<activity android:name=".activity.NewWordsActivity"
+		    android:exported="false"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.newwords"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter> 
+		</activity>
+		
+		<activity android:name=".activity.RandActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".activity.CurrentListActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+		
+		<activity android:name=".activity.DictionaryActivity"
+		    android:exported="false"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.dictionary"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter>
+		</activity>
+		
+		<activity android:name=".activity.SettingActivity"
+		    android:exported="false"
+		    android:theme="@android:style/Theme.NoTitleBar">
+		    <intent-filter>
+		        <action android:name="com.android.tt.action.setting"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.TAB"/>
+		    </intent-filter>
+		</activity>
+		
+		
+	</application>
+	
+</manifest>

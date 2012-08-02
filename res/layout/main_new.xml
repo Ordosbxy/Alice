@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:background="@color/white"
+	android:layout_gravity="right">
+	<ScrollView android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:orientation="vertical">
+	<TextView android:id="@+id/addition" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize="18px"
+		android:textColor="@color/black" />
+
+	<!--  ImageButton android:id="@+id/come" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/looknewwords"
+		android:layout_below="@id/addition" android:src="@drawable/xml_back"
+		android:gravity="center"  />-->
+		</LinearLayout>
+		</ScrollView>
+</RelativeLayout>

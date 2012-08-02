@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, CoolEnglishListenerActivity!</string>
+	<string name="app_name">英语听听</string>
+
+	<string name="tab1_text">首页</string>
+	<string name="tab2_text">本地</string>
+	<string name="tab3_text">词典</string>
+	<string name="tab4_text">生词本</string>
+	<string name="tab5_text">更多</string>
+	
+	
+	<string name="progress_dialog_title">处理中</string>
+	<string name="progress_dialog_search">正在搜索资源...</string>
+	<string name="star_flag">★</string>
+	<string name="current_title_pre">当前歌曲: </string>
+
+	<string name="loadMusicProgressTitle">处理中</string>
+	<string name="loadMusicProgressMsg">正在加载音乐...</string>
+	<string name="lrcNotFound">没有可以显示的歌词...</string>
+	<string name="playorder">顺序播放</string>
+	<string name="repeateone">单曲循环</string>
+	<string name="playone">单曲播放</string>
+	<string name="repeateall">全部循环</string>
+	<string name="randomplay">随机播放</string>
+	<string name="fontsize">选择字体大小</string>
+	<string name="fontbig">这是大体</string>
+	<string name="fontmid">这是中体</string>
+	<string name="fontsml">这是小体</string>
+	<string name="moreresource">更多资源</string>
+	<string name="word">查词</string>
+	<string name="notebook">生词本</string>
+	<string name="countmanager">账户管理</string>
+	<string name="exit">退出程序</string>
+	<string name="confirm">确定</string>
+	<string name="rename">重命名</string>
+	<string name="delete">删除</string>
+	<string name="wordid">序号</string>
+	<string name="wordtext">单词</string>
+	<string name="explain">单词解释</string>
+	<string name="addtime">添加时间</string>
+	<string name="addsong">添加歌曲</string>
+	<string name="nodata">此目录下面没有数据</string>
+	<string name="first_page">首页</string>
+	<string name="history">历史记录</string>
+	<string name="search_history">查词历史</string>
+	<string name="setting">设置</string>
+	<string name="intro">词典介绍</string>
+	<string name="clean_words">清空生词本</string>
+	<string name="yes">是</string>
+	<string name="no">否</string>
+	<string name="not_find_tip1">非常抱歉，暂无与”</string>
+	<string name="not_find_tip2">“相符的内容！</string>
+	<string name="please_input">请输入查询内容</string>
+	<string name="init_faile">初始化失败！</string>
+
+	<string-array name="type_item_names">
+		<item>影视英语</item>
+		<item>名人演讲</item>
+		<item>英文歌曲赏析</item>
+		<item>听力测试</item>
+	</string-array>
+	
+	<string-array name="type_item_examples">
+	    <item>KongFu pandon、Social Net、In the Wild</item>
+	    <item>Obama 、White House、Bush</item>
+	    <item>We are found、You are my angle、I love you</item>
+	    <item>en.hujiang.com 、New concept</item>
+	</string-array>
+	
+	<string-array name="music_modes">
+		<item>顺序播放</item>
+		<item>单曲循环</item>
+		<item>单曲播放</item>
+		<item>全部循环</item>
+	</string-array>
+
+	<string name="currentwordsbook">当前生词本：</string>
+	<string name="alltime">全部时间</string>
+	<string name="nowday">当天</string>
+	<string name="inthreedays">三天内</string>
+	<string name="weekly">一周内</string>
+	<string name="alldifficulty">所有难度</string>
+	<string name="difficult">困难</string>
+	<string name="middle">中等</string>
+	<string name="easy">容易</string>
+	<string name="info">提示</string>
+	<string name="testofall">本次测试共有</string>
+	<string name="subject">题目</string>
+	<string name="rightcount">答对数目:</string>
+	<string name="wrongcount">答错数目:</string>
+	<string name="notanswercount">未答数目:</string>
+	<string name="inputtablename">请输入分类名称:</string>
+	<string name="addsuccess">成功添加到生词本了</string>
+	<string name="added">单词已添加到生词本</string>
+	<string name="a_str">A</string>
+	<string name="b_str">B</string>
+	<string name="c_str">C</string>
+	<string name="d_str">D</string>
+	<string name="center_line">-</string>
+	<string name="zero">0</string>
+	<string name="lookresult">查看结果</string>
+	<string name="looknewwords">返回</string>
+	<string name="input">请输入</string>
+	<string name="del">是否要删除 ?</string>
+	<string name="newwords_manage">生词本管理</string>
+	<string name="select_table">请选择生词本</string>
+	<string name="move_add">add</string>
+	<string name="move_cancel">cancel</string>
+	<string name="newwords_move">move</string>
+	
+	<string name="favorites">收藏</string>
+	<string name="download">下载</string>
+	<string name="cancel">取消</string>
+</resources>

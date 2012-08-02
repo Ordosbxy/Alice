@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background_1"
+	android:id="@+id/menuShowLayer">
+
+	<LinearLayout android:orientation="vertical"  android:id="@+id/mainlayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="33px">
+			<TextView android:id="@+id/title" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#000000"
+				android:textSize="20px" android:layout_marginLeft="5px"
+				android:layout_marginTop="2px" />
+			<ImageButton android:id="@+id/button_menu" android:visibility="gone"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/words_menu" android:layout_marginLeft="603px" />
+			<ImageButton android:id="@+id/button_close"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/words_close" android:visibility="gone"
+				android:layout_marginLeft="6px" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="28px" android:layout_marginLeft="4px"
+			android:background="@drawable/part_back" android:layout_marginTop="12px">
+			<ImageButton android:id="@+id/button_all_del" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/sel_all" android:layout_marginTop="8px" />
+			<ImageButton android:id="@+id/button_del"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/words_del" android:layout_marginTop="8px" />
+
+			<Spinner android:id="@+id/Spinner_1" 
+				 android:layout_width="83px"
+				android:layout_height="22px" android:background="@drawable/words_xuanzhekuan"
+				android:layout_marginTop="5px" />
+		</LinearLayout>
+		
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="28px" android:layout_marginLeft="4px"
+			android:background="@drawable/part_back" android:layout_marginTop="12px">
+			<ImageButton android:id="@+id/button_save"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/words_save_newwords"
+				android:layout_marginTop="8px" />
+			<ImageButton android:id="@+id/button_change"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/words_change"
+				android:layout_marginTop="8px" />
+			<ImageButton android:id="@+id/button_move"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="8px" 
+				android:background="@drawable/table_move" />
+			
+		</LinearLayout>
+		<!-- android:background="@drawable/show_line" -->
+		<LinearLayout android:layout_width="wrap_content" android:background="@drawable/part_back"
+			android:layout_height="wrap_content" android:layout_marginLeft="5px"
+			android:layout_marginTop="8px" android:orientation="horizontal">
+			<TextView android:text="@string/wordid"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				 android:layout_width="42px" android:textSize="20sp"
+				android:gravity="center"></TextView>
+			<TextView android:text="@string/wordtext" android:textColor="@color/black"
+				android:layout_height="wrap_content" android:layout_width="105dip"
+				android:textSize="20sp" android:gravity="center"></TextView>
+			<TextView android:text="@string/addtime" android:textColor="@color/black"
+				android:layout_height="wrap_content" android:layout_width="133dip"
+				android:textSize="20sp" android:gravity="left"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="368dip">
+			<llf.cool.view.RollBackListView android:id="@+id/my_list" android:layout_width="790dip"
+				android:layout_height="wrap_content" android:cacheColorHint="#00000000"
+				android:layout_marginLeft="5px" android:listSelector="@drawable/words_item" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/menuShow"
+		android:layout_width="300dip" android:layout_height="380dip"
+		android:background="@drawable/menu_back" android:paddingTop="45dip"
+		android:paddingLeft="10dip" android:layout_x="480dip"
+		android:layout_y="35dip" android:visibility="gone">
+		<ScrollView android:layout_width="280dip"
+			android:scrollbars="none" android:layout_height="320dip"
+			android:background="#66ffffff">
+			<TextView android:id="@+id/helpText" android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:textColor="#000000" />
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/explainShow"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		 android:paddingTop="100dip" android:gravity="center"
+    	 android:layout_x="100dip"
+		android:layout_y="35dip" android:visibility="gone">
+		<ScrollView android:layout_width="wrap_content"
+			android:scrollbars="none" android:layout_height="wrap_content"
+			android:background="#66ffffff">
+			<TextView android:id="@+id/explainText" android:layout_width="fill_parent"
+				android:textSize="21sp" android:layout_height="fill_parent" android:textColor="#000000" />
+		</ScrollView>
+	</LinearLayout>
+</AbsoluteLayout>
+

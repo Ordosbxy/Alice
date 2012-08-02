@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="42px"
+	    android:layout_height="fill_parent"
+    >
+     <TextView
+		  		android:id="@+id/text1"
+		  		android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity ="center"
+		    	android:textColor ="#000000"
+		    	android:layout_marginLeft="15px"
+		  />
+    </LinearLayout>
+    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="105px"
+	    android:layout_height="fill_parent"
+    >
+		  <TextView
+		  		android:id="@+id/text2"
+		  		android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity ="left"
+		    	android:textColor ="#000000"
+		  /> 
+		  </LinearLayout>
+		   <!-- LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:orientation="horizontal"
+			    android:layout_width="100px"
+			    android:layout_height="fill_parent"
+   			 >
+		  <TextView
+		  		android:id="@+id/text3"
+		  		android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity ="left"
+		    	android:textColor ="#000000"
+		  />
+		  </LinearLayout> 
+		   <LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="360px"
+		    android:layout_height="fill_parent"
+		    android:layout_marginLeft="5px"
+    		>
+		   <TextView
+		  		android:id="@+id/text4 "
+		  		android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity ="left"
+		    	android:textColor ="#000000"
+		  />
+		  </LinearLayout>-->
+		    <!--  LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:orientation="horizontal"
+			    android:layout_width="85px"
+			    android:layout_height="fill_parent"
+    		>
+			  <TextView
+		  			android:id="@+id/ib6"
+		  			android:layout_width="wrap_content"
+		    		android:layout_height="18px"
+		    		android:layout_gravity="center"
+		    		android:textColor ="#000000"
+		    		android:layout_marginLeft="10px"
+	  		  />
+  		  </LinearLayout>-->
+  		   <LinearLayout 
+			    android:orientation="horizontal"
+			    android:layout_width="133px"
+			    android:layout_height="fill_parent"
+   			 >
+   			<TextView
+	  			android:id="@+id/text5 "
+	  			android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:gravity ="center"
+	    		android:textColor ="#000000"
+  		  />
+  		  </LinearLayout>
+  		  <!--  LinearLayout 
+			    android:orientation="horizontal"
+			    android:layout_width="100dip"
+			    android:layout_height="40dip"
+   			 >
+   			<Button   				
+	  			android:id="@+id/text6 "
+	  			android:layout_width="wrap_content"
+	    		android:layout_height="40dip"
+	    		android:text="@string/delete"
+	    		android:gravity="right"
+  		  />
+  		  </LinearLayout>-->
+  		  
+</LinearLayout>
